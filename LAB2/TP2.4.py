@@ -28,7 +28,7 @@ def verifica_factura(nume_fisier):
         # Verificare individuala pentru fiecare sectiune
         erori = []
 
-        # Verificam existenta si formatul fiecarui camp separat
+        # Verifica existenta si formatul fiecarui camp separat
         if not re.search(r"Factura\s+Nr:\s+\d+", continut):
             erori.append(" 'Factura Nr' lipseste sau are format gresit. (Ex: 'Factura Nr: 1234')")
 
@@ -47,7 +47,7 @@ def verifica_factura(nume_fisier):
         if not re.search(r"Cantitate:\s+\d+", continut):
             erori.append(" 'Cantitate' lipseste sau are format gresit. (Ex: 'Cantitate: 2')")
 
-        # 2️⃣ Afisam erorile gasite
+        # erorile gasite
         if erori:
             for eroare in erori:
                 print(eroare)
