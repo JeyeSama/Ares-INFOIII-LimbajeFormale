@@ -1,0 +1,6 @@
+Factura Nr: a1234
+Client: Andrei Pop
+Produse: Laptop, Telefon
+Pret: 1250.99
+TVA: 19%
+Cantitate: 2
