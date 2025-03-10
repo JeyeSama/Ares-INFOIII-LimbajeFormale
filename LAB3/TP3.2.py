@@ -49,19 +49,6 @@ class ParcareAutomata:
                 except:
                     print("Format invalid. Folositi: PLECARE <nr>")
 
-# Rulare simulare parcare
+# Rulare
 parcare = ParcareAutomata(numar_locuri=5)
 parcare.ruleaza()
-
-# Explicatie functii: (Cod scris, explicatia asta am generat-o ca imi era lene sa fac comentarii la fiecare in parte)
-# - __init__(numar_locuri) -> Creeaza o lista cu locurile de parcare, initial toate "liber".
-# - afiseaza_stare() -> Afiseaza locurile de parcare si statusul lor (liber/ocupat).
-# - parcheaza() -> Găsește primul loc liber și îl marchează ca "ocupat".
-# - pleaca(loc) -> Eliberează locul specificat, dacă este valid.
-# - ruleaza() -> Permite utilizatorului sa interactioneze cu parcarea folosind comenzile PARCARE, PLECARE <nr>, EXIT.
-#
-# Logica:
-# - Lista locuri[] pastreaza statusul fiecarui loc de parcare.
-# - Cand utilizatorul introduce "PARCARE", cauta primul loc liber si il ocupa.
-# - "PLECARE <nr>" elibereaza locul specificat, daca este valid.
-# - Daca parcarea este plina sau se incearca eliberarea unui loc liber, afiseaza mesaje de eroare.
